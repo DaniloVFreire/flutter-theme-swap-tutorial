@@ -1,16 +1,30 @@
 # flutter_theme_tutorial
 
-A new Flutter project.
+A simple tutorial of a provider theme swap in flutter
 
-## Getting Started
+## Requirements
 
-This project is a starting point for a Flutter application.
+- Flutter 3.10.8 or above
 
-A few resources to get you started if this is your first Flutter project:
+## Running
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+flutter pub get
+flutter run -d web-server --web-hostname=0.0.0.0 --web-port 3001
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tutorial summary
+
+- Install Provider package with:
+  `flutter pub add provider`
+- Create the themes data
+- Create a theme provider with your themes
+- Instanciate in the root of the project
+- Get it in the context and trigger an swap function that notify all listeners
+- Be happy
+
+## References
+
+- Flutter cli docs: https://docs.flutter.dev/reference/flutter-cli
+- Flutter theme docs: https://docs.flutter.dev/cookbook/design/themes
+- Flutter provider package: https://pub.dev/packages/provider
